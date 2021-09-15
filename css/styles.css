@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Klee+One:wght@600&display=swap");
+:root {
+  --main-bg-color: #050505;
+  --font-family: "Klee One", cursive;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: var(--main-bg-color);
+}
+header {
+  background-color: var(--main-bg-color);
+  font-family: var(--font-family);
+  position: sticky;
+  top: 0;
+}
+nav {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  color: white;
+  padding: 0 30px;
+  font-size: 30px;
+}
+nav ul {
+  display: flex;
+  height: 58px;
+  align-items: center;
+}
+nav ul li {
+  list-style: none;
+  padding: 0 23px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+nav ul li a:hover {
+  color: #3db2ff;
+}
+.search {
+  display: flex;
+  align-items: center;
+  margin: 2px;
+}
+.search input {
+  width: 20vw;
+  height: 20px;
+  margin: 2px 16px 0 20px;
+  padding: 0 12px;
+  border-radius: 5px;
+}
+.search ::placeholder{
+  font-family: var(--font-family);
+}
+.search button{
+  font-family: var(--font-family);
+  font-weight: 900px;
+}
+.slider {
+  display: flex;
+  justify-content: center;
+  margin: 8px;
+}
+.slider img {
+  border: 2px solid white;
+}
+.container {
+  min-height: calc(100vh - 12vh - 58px);
+}
+.card {
+  max-width: 91vw;
+  margin: 37px auto;
+  background-color: #faf3f3;
+  border: 5px solid white;
+  border-radius: 10px;
+}
+.card h2 {
+  margin: auto 10px;
+}
+.cards {
+  margin: 10px;
+  display: flex;
+  overflow: hidden;
+}
+.card-item {
+  display: inline-flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 10px 23px;
+}
+.card-item img {
+  margin: 10px 0;
+}
+footer {
+  background-color: var(--main-bg-color);
+  height: 12vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font-family);
+}
